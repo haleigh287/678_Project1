@@ -34,7 +34,7 @@ void init_shell()
 {
     clear();
     printf("\n\n\n\n******************");
-    printf("\n****   QUASH   ****");
+    printf("\n       QUASH      ");
     printf("\n*******************");
     char* username = getenv("USER");
     printf("\n\n\nUSER is: @%s", username);
