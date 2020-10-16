@@ -82,8 +82,11 @@ void execArgs(char** parsed)
         exit(0);
     } else {
         // waiting for child to terminate
-        printf("%d running in background\n", pid);
+        printf("%d yeet85 running in background\n", pid);
         wait(NULL);
+        printf("The %d finished ", pid);
+        printf(*parsed);
+        printf("\n");
         return;
     }
 }
@@ -140,6 +143,9 @@ void execArgsPiped(char** parsed, char** parsedpipe)
             // parent executing, waiting for two children
             wait(NULL);
             wait(NULL);
+            printf("The %d finished ", p1);
+            printf(*parsed);
+            printf("\n");
         }
     }
 }
